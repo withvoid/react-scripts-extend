@@ -1,4 +1,5 @@
-#!/usr/bin/env;
+#!/usr/bin/env node
+
 const spawn = require('react-dev-utils/crossSpawn');
 const chalk = require('react-dev-utils/chalk');
 const args = process.argv.slice(2);
