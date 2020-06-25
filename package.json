@@ -1,0 +1,30 @@
+{
+  "name": "react-scripts-extend",
+  "version": "1.0.0",
+  "description": "utility library to extend react-scripts configuration",
+  "main": "bin/index.js",
+  "bin": {
+    "react-scripts-extend": "index.js"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/withvoid/react-scripts-extend.git"
+  },
+  "keywords": [
+    "react-scripts",
+    "react",
+    "reactjs"
+  ],
+  "author": "Adeel Imran",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/withvoid/react-scripts-extend/issues"
+  },
+  "homepage": "https://github.com/withvoid/react-scripts-extend#readme",
+  "dependencies": {
+    "react-dev-utils": "^10.2.1"
+  }
+}
