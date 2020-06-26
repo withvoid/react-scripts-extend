@@ -10,6 +10,6 @@ const modulePath = path.join(
 
 module.exports = {
   modulePath,
-  configFilePath: `${projectDir}/config-overrides`,
+  configFilePath: `${projectDir}/config-extends`,
   paths: require(`${modulePath}/config/paths`);,
 };
