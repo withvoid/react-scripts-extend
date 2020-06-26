@@ -11,5 +11,5 @@ const modulePath = path.join(
 module.exports = {
   modulePath,
   configFilePath: `${projectDir}/config-extends`,
-  paths: require(`${modulePath}/config/paths`);,
+  paths: require(`${modulePath}/config/paths`),
 };
