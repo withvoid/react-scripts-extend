@@ -1,9 +1,15 @@
-process.env.NODE_ENV = process.env.NODE_ENV || 'development'
-const nodeEnv = process.env.NODE_ENV || 'development';
+const fs = require('fs');
+const path = require('path');
+
+const projectDir = path.resolve(fs.realpathSync(process.cwd()));
+const scriptName = 'react-scripts';
+const modulePath = path.join(
+  require.resolve(`${scriptName}/package.json`),
+  '..'
+);
 
 module.exports = {
-  nodeEnv,
-  scriptName: 'react-scripts',
-  configFilePath: './config-extends',
-  paths: require(`react-scripts/config/paths`)
-}
+  modulePath,
+  configFilePath: `${projectDir}/config-overrides`,
+  paths: require(`${modulePath}/config/paths`);,
+};

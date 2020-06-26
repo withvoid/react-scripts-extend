@@ -10,19 +10,12 @@ const getFile = (file) => {
   } catch (error) {
     return false;
   }
-}
-
-const defaultOverridesConfig = {
-  paths: (paths, env) => {
-    return paths;
-  },
-  webpack: (config, env) => {
-    return config;
-  },
-  devServer: (configFn) => (proxy, allowedHost) => {
-    const config = configFn(proxy, allowedHost);
-    return config;
-  }
 };
 
-module.exports = { getFile, defaultOverridesConfig }
+const defaultOverridesConfig = {
+  paths: (paths, env) => paths,
+  webpack: (config, env) => config,
+  devServer: (configFn) => (proxy, allowedHost) => configFn(proxy, allowedHost),
+};
+
+module.exports = { getFile, defaultOverridesConfig };
