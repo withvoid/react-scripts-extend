@@ -1,5 +1,5 @@
 {
-  "name": "react-scripts-extend",
+  "name": "@withvoid/react-scripts-extend",
   "version": "1.0.0",
   "description": "utility library to extend react-scripts configuration",
   "main": "bin/index.js",
